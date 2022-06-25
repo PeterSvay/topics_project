@@ -21,9 +21,11 @@ Step 7: Once the mote is selected, select clean then compile. You will be given 
 
 Step 8: Once the motes are in position, click start on the simulation and allow it to run. Additionally, to provide a better observation of the network simulation, the 'view' menu can be opened to enable the display of radio traffic, node ID, etc.
 
-Step 9: To include a malcious mote which will act as a udp-client, add the malicious-udp-client-sinkhole.c and malicious-udp-client-sinkhole.h files into contiki/examples/ipv6/rpl-udp folder. Then replace the rpl-mhrof.c in the home/contiki/core/net/rpl folder with the modified version in this github.
+Step 9: To include a malcious mote which will act as a udp-client, add the malicious-udp-client-sinkhole.c and malicious-udp-client-sinkhole.h files into home/contiki/examples/ipv6/rpl-udp folder. Then replace the rpl-mhrof.c in the home/contiki/core/net/rpl folder with the modified version in this github.
 
 Step 10: Follow steps 4-6 to include the malcious node in the simulation. The malicious will default as a normal node once the simulation is running. To activate the malicious node, right click the mote and click 'Click button on Z1' to initiate attack.
 
-Step 11: To set up the IDS system, replace the rpl-icmp6.c 
+Step 11: To set up the IDS system, replace the rpl-icmp6.c and rpl-private.h in the home/contiki/core/net/rpl folder then include the udp-client-time-trust.c udp-server-time-trust.c files in home/contiki/examples/ipv6/rpl-udp along with their respective header files (Note that the header files may need to be renamed to match the line of code tht includes them).
+
+Step 12: To reconstruct Sencarios 3-5 as seen in the research paper, repeat steps 4-6 for the new time-trust nodes. WHere the non-malicious client and server nodes will be replaced.
 
