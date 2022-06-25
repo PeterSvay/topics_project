@@ -19,5 +19,9 @@ Step 6: Once the mote is selected, select clean then compile. You will be given 
 
 Step 7: Once the motes are in position, click start on the simulation and allow it to run. Additionally, to provide a better observation of the network simulation, the 'view' menu can be opened to enable the display of radio traffic, node ID, etc.
 
-Step 8: To include a malcious mote which will act as a udp-client, add the malicious-udp-client-sinkhole.c and malicious-udp-client-sinkhole.h files into contiki/examples/ipv6/rpl-udp folder. Follow steps 4-6 to include the malcious node in the simulation. The malicious will default as a normal node once the simulation is running. To activate the malicious node, right click the mote and click 'Click button on Z1' to initiate attack.
+Step 8: To include a malcious mote which will act as a udp-client, add the malicious-udp-client-sinkhole.c and malicious-udp-client-sinkhole.h files into contiki/examples/ipv6/rpl-udp folder. Then replace the rpl-mhrof.c in the home/contiki/core/net/rpl folder with the modified version in this github.
+
+Step 9: Follow steps 4-6 to include the malcious node in the simulation. The malicious will default as a normal node once the simulation is running. To activate the malicious node, right click the mote and click 'Click button on Z1' to initiate attack.
+
+Step 10:
 
