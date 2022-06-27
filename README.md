@@ -33,3 +33,4 @@ Step 13: To change characteristics of the IDS, simply edit components of the cod
 
 Step 14: Run all simulation scenarios for specific time frame and use tools such as Wireshark and Powertrace to observe.
 
+This is a tutorial on how to capture packets on the simulation using Wireshark https://www.youtube.com/watch?v=rcOgvcYyVVA&ab_channel=PhDAcademy 
