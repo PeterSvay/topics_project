@@ -31,6 +31,6 @@ Step 12: To reconstruct Sencarios 3-5 as seen in the research paper, repeat step
 
 Step 13: To change characteristics of the IDS, simply edit components of the code in the udp-server-time-trust.c and udp-client-time-trust.c file. In this case, the line of code to modify the uncertainty threshold is around line 140 of the udp-server-time-trust.c file.
 
-Step 14: Run all simulation scenarios for specific time frame and use tools such as Wireshark and Powertrace to observe.
+Step 14: Run all simulation scenarios for specific time frame and use tools such as Wireshark and Powertrace to observe. Results are calculated using the PowerConsumption forumla in the research paper then visualized using Excel.
 
 This is a tutorial on how to capture packets on the simulation using Wireshark https://www.youtube.com/watch?v=rcOgvcYyVVA&ab_channel=PhDAcademy 
