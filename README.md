@@ -27,7 +27,9 @@ Step 10: Follow steps 4-6 to include the malcious node in the simulation. The ma
 
 Step 11: To set up the IDS system, replace the rpl-icmp6.c and rpl-private.h in the home/contiki/core/net/rpl folder then include the udp-client-time-trust.c udp-server-time-trust.c files in home/contiki/examples/ipv6/rpl-udp along with their respective header files (Note that the header files may need to be renamed to match the line of code tht includes them).
 
-Step 12: To reconstruct Sencarios 3-5 as seen in the research paper, repeat steps 4-6 for the new time-trust nodes. WHere the non-malicious client and server nodes will be replaced in the simulation.
+Step 12: To reconstruct Sencarios 3-5 as seen in the research paper, repeat steps 4-6 for the new time-trust nodes. Where the non-malicious client and server nodes will be replaced in the simulation.
 
-Step 13: Run all simulation scenarios for specific time frame and use tools such as Wireshark and Powertrace to observe.
+Step 13: To change characteristics of the IDS, simply edit components of the code in the udp-server-time-trust.c and udp-client-time-trust.c file.
+
+Step 14: Run all simulation scenarios for specific time frame and use tools such as Wireshark and Powertrace to observe.
 
